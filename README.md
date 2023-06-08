@@ -10,7 +10,7 @@ In your `README.md` include:
 - A description of any issues you encountered during deployment of this Lambda.
 - A link to your `images.json` file.
 
-# S3 and Lambda Image Upload Handler
+## S3 and Lambda Image Upload Handler
 
 This Lambda function automatically processes image uploads to an S3 bucket.
 
@@ -26,4 +26,4 @@ This Lambda function automatically processes image uploads to an S3 bucket.
 
 ## images.json
 
-The [images.json](link-to-images-json-file) file contains an array of objects, each representing an uploaded image. It includes metadata such as the name, size, type, and timestamp of the image.
+The [images.json](./images.json) file contains an array of objects, each representing an uploaded image. It includes metadata such as the name, size, type, and timestamp of the image (not really sure what was meant by add a link to it so I just create an extra images.json object to link to).
