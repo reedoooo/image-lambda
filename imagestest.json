@@ -1,0 +1,42 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.2",
+      "eventTime": "2023-06-07T12:34:56.789Z",
+      "requestParameters": {
+        "sourceIPAddress": "127.0.0.1"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "sample-event-id",
+        "bucket": {
+          "name": "your-bucket-name",
+          "ownerIdentity": {
+            "principalId": "EXAMPLE"
+          },
+          "arn": "arn:aws:s3:::your-bucket-name"
+        },
+        "object": {
+          "key": "path/to/uploaded-image.jpg",
+          "size": 1024,
+          "eTag": "0123456789abcdef0123456789abcdef",
+          "versionId": "1234567890abcdef",
+          "contentType": "image/jpeg",
+          "metadata": {
+            "customKey": "customValue"
+          }
+        }
+      },
+      "responseElements": {
+        "x-amz-request-id": "EXAMPLE123456789",
+        "x-amz-id-2": "EXAMPLE123/abc123/xyz456"
+      },
+      "awsRegion": "us-east-1",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "EXAMPLE"
+      },
+      "eventSource": "aws:s3"
+    }
+  ]
+}
